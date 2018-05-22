@@ -42,6 +42,9 @@ Route::get('produto/{id?}/cor/{cor?}', function ($id = 12, $cor = "red") {
     return "Produto id: {$id} Cor = {$cor}";
 });
 
+
+
+
 /**
  * Exemplo de utilização do apelido pelo link abaixo.
  *
