@@ -43,8 +43,6 @@ Route::get('produto/{id?}/cor/{cor?}', function ($id = 12, $cor = "red") {
 });
 
 
-
-
 /**
  * Exemplo de utilização do apelido pelo link abaixo.
  *
@@ -77,3 +75,12 @@ Route::group(['prefix' => 'admin'], function () {
         return "Página de Admin Configuracao!";
     });
 });
+
+
+Route::get('aluno', 'Aluno\AlunoController@index');
+
+Route::get('livro',['uses'=>'LivroController@index','as'=>'livro.index']);
+
+
+//Rota implicita
+Route::controller('produto','ProdutoController');
