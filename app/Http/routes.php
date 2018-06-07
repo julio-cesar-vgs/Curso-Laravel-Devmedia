@@ -95,6 +95,10 @@ Route::get('home', function () {
     );
     $livros = [];
 
-    return view('home', compact('usuarios','livros'));
+    return view('home', compact('usuarios', 'livros'));
 });
+
+
+// rota para acessar o index do usuario. Nesta model nao esta retornando nada ate omomento
+Route::get('usuario', ['uses' => 'UsuarioController@index', 'as' => 'usuario']);
 
