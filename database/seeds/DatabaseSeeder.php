@@ -7,10 +7,12 @@ class DatabaseSeeder extends Seeder
     /**
      * Run the database seeds.
      *
+     * DatavaseSeeder vau receber
+     *
      * @return void
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $this->call(LivrosTableSeeder::class);
     }
 }
